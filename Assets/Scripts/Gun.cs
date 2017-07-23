@@ -33,6 +33,7 @@ public class Gun : MonoBehaviour {
             Ray ray = new Ray(spawn.position, spawn.forward);
             RaycastHit hit;
 
+            //defines how far the bullet travels
             float shotDistance = 20;
 
             if (Physics.Raycast(ray, out hit, shotDistance))
